@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lustria');
+
+body {
+    font-family: 'Lustria', serif;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top: 70px;
+}
+p, a {
+    font-family: 'Lato', sans-serif;
+}
+/*img {
+    max-width: 100%;
+    height: auto;
+}*/
+/*.button {
+    background: #09e;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em 1.5em;
+    text-shadow: 0 1px 3px rgba(0,0,0,.75);
+    transition: background-color .3s ease-in-out;
+}
+.button:hover {
+    background: #07c;
+}*/
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #402e51;
+    /*border-bottom: 2px solid #ccc;*/
+    height: 70px;
+    opacity: .6;
+    box-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+.navigation {
+    height: 70px;
+    display: flex; /* make this a flexbox container */
+    justify-content: space-between; /* place our items as far apart from each other as possible */
+    align-items: center; /* vertically align items */
+}
+.brand {
+  color: white;
+    /*color: transparent;
+    background: url(../images/z.png) no-repeat top left;
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+    float: left;
+    overflow: hidden;*/
+}
+.menu {
+    display: flex;
+    align-items: stretch;
+    height: 70px;
+}
+.menu-link {
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: white;
+}
+.menu-link:hover {
+    /*background: #65ba7d;*/
+    color: #65ba7d;
+}
+.demo, .getstarted {
+  padding: 5px 15px;
+  color: #65ba7d;
+  border: 2px solid #65ba7d;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.demo:hover, .getstarted:hover {
+  color: white;
+  background-color: #65ba7d;
+}
+
+.hero {
+    /*background: url(../images/zebra-hero.jpg) center;*/
+    background-color: lightgrey;
+    height: 600px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    min-height: 350px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*text-shadow: 0 1px 3px rgba(0,0,0,.75);*/
+}
+/*.hero-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}*/
+.hero-headline1, .hero-headline2 {
+    font-size: 4em;
+    font-weight: bold;
+    /*margin-top: 1em;*/
+}
+.hero-headline2 {
+  margin-left: 2em;
+}
+.hero-content, .hero-action {
+    padding: .5em;
+    margin-top: .5em;
+}
+.hero-content {
+    font-size: 2em;
+}
