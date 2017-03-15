@@ -5,14 +5,12 @@ body {
     font-size: 14px;
     line-height: 1.4;
     padding-top: 70px;
+    background-color: #f5f6f7;
 }
 p, a {
     font-family: 'Lato', sans-serif;
 }
-/*img {
-    max-width: 100%;
-    height: auto;
-}*/
+
 /*.button {
     background: #09e;
     color: #fff;
@@ -54,7 +52,6 @@ header.scrolling {
 }
 
 .brand {
-  /*color: white;*/
     color: transparent;
     background: url(../images/RIGHTCOMPLY-logo.png) no-repeat;
     background-size: cover;
@@ -77,6 +74,7 @@ header.scrolling {
 .menu-link:hover {
     /*background: #65ba7d;*/
     color: #92af1f;
+    cursor: pointer;
 }
 .demo, .getstarted {
   padding: 5px 15px;
@@ -89,7 +87,9 @@ header.scrolling {
   color: white;
   background-color: #92af1f;
 }
-
+.getstarted {
+  padding: 10px 15px;
+}
 .hero {
     /*background: url(../images/zebra-hero.jpg) center;*/
     background-color: lightgrey;
@@ -108,7 +108,6 @@ header.scrolling {
     font-size: 4em;
     font-weight: bold;
     text-shadow: 0 1px 3px rgba(0,0,0,.3);
-    /*margin-top: 1em;*/
 }
 .hero-headline2 {
   margin-left: 2em;
@@ -123,6 +122,93 @@ header.scrolling {
     text-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
 .main-content {
-  height: 1000px;
+  text-align: center;
+}
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0 -10px;*/
+    margin-top: 7em;
+}
+.column {
+    /*flex: 1 1 50%;*/
+    height: 500px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    /*padding: 0 10px;*/
+}
+.column-three {
+  flex: 1 1 33.33%;
+  padding: 0 40px;
+}
+.column-image {
+  width: 60%;
+}
+.column-text {
+  width: 40%;
+}
+/*.column-image {
+    width: 130px;
+    border-radius: 50%;
+    border: 10px solid #ddd;
+    transition: transform .3s ease-in-out;
+}*/
+/*.column-image:hover {
+    transform: rotate(-10deg);
+}*/
+.column-headline {
+    margin-top: 4em;
+    font-size: 3.2em;
+    color: #92af1f;
+}
+.column-headline-three {
+  margin-top: 2em;
+  font-size: 3em;
+  color: white;
+  padding: 20px 10px;
+  background-color: #402e51;
+}
+.column-container-three {
+  margin-top: 0;
   background-color: white;
+  border: 1px solid lightgrey;
+}
+.column-title {
+    margin-top: 2em;
+    font-size: 2em;
+    color: #92af1f;
+}
+.column-content {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+.row-container {
+  background-color: #402e51;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.row-headline{
+  font-size: 3em;
+}
+.row-text {
+  font-size: 1.5em;
+}
+hr {
+  margin-top: 7em;
+}
+.footer {
+    color: grey;
+    display: flex; /* make this a flexbox container */
+    justify-content: space-between; /* place our items as far apart from each other as possible */
+    align-items: center; /* vertically align items */
+}
+.menu-link-footer {
+  color: grey;
 }
