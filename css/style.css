@@ -41,12 +41,17 @@ p, a {
     opacity: .6;
     box-shadow: 0 1px 5px rgba(0,0,0,.5);
 }
+header.scrolling {
+    background-color: #402e51;
+    opacity: .9;
+}
 .navigation {
     height: 70px;
     display: flex; /* make this a flexbox container */
     justify-content: space-between; /* place our items as far apart from each other as possible */
     align-items: center; /* vertically align items */
 }
+
 .brand {
   color: white;
     /*color: transparent;
@@ -70,18 +75,18 @@ p, a {
 }
 .menu-link:hover {
     /*background: #65ba7d;*/
-    color: #65ba7d;
+    color: #92af1f;
 }
 .demo, .getstarted {
   padding: 5px 15px;
-  color: #65ba7d;
-  border: 2px solid #65ba7d;
+  color: #92af1f;
+  border: 2px solid #92af1f;
   margin-top: 20px;
   margin-left: 20px;
 }
 .demo:hover, .getstarted:hover {
   color: white;
-  background-color: #65ba7d;
+  background-color: #92af1f;
 }
 
 .hero {

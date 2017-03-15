@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true;">
     <title>Right Comply</title>
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
 
     <header class="header">
@@ -29,8 +34,56 @@
       <div class="hero-action"><a href="#" class="menu-link getstarted">GET STARTED</a></div>
     </section>
 
+    <section class="hero">
+      <h1 class="hero-headline1">Get Compliant.</h1>
+      <h1 class="hero-headline2">Stay Compliant.</h1>
+      <div class="hero-content">Right Comply brings pre and post hiring compliance to you.</div>
+      <div class="hero-action"><a href="#" class="menu-link getstarted">GET STARTED</a></div>
+    </section>
+
+    <section class="hero">
+      <h1 class="hero-headline1">Get Compliant.</h1>
+      <h1 class="hero-headline2">Stay Compliant.</h1>
+      <div class="hero-content">Right Comply brings pre and post hiring compliance to you.</div>
+      <div class="hero-action"><a href="#" class="menu-link getstarted">GET STARTED</a></div>
+    </section>
 
 
+
+    <script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            $("header").addClass("scrolling");
+        } else {
+            $("header").removeClass("scrolling");
+        }
+    });</script>
+
+    <script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            $("li a").addClass("scrolling");
+        } else {
+            $("li a").removeClass("scrolling");
+        }
+    });</script>
+
+
+    <script>
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            $("h1:hover").addClass("scrolling");
+        } else {
+            $("h1:hover").removeClass("scrolling");
+        }
+    });</script>
 
   </body>
 </html>
