@@ -17,8 +17,9 @@
 
     <header class="header">
 		    <nav class="navigation container">
-			    <div class="logo"><img src="images/RIGHTCOMPLY-logo.png" alt="Right Comply Logo">
-          </div>
+			    <!-- <div class="logo"><img src="images/RIGHTCOMPLY-logo.png" alt="Right Comply Logo">
+          </div> -->
+          <h1 class="brand">RIGHT COMPLY</h1>
 		        <ul class="menu">
 		            <li class="menu-item"><a href="#" class="menu-link">Solutions</a></li>
 		            <li class="menu-item"><a href="#" class="menu-link">Our Story</a></li>
@@ -35,19 +36,13 @@
       <div class="hero-action"><a href="#" class="menu-link getstarted">GET STARTED</a></div>
     </section>
 
-    <section class="hero">
-      <h1 class="hero-headline1">Get Compliant.</h1>
-      <h1 class="hero-headline2">Stay Compliant.</h1>
-      <div class="hero-content">Right Comply brings pre and post hiring compliance to you.</div>
-      <div class="hero-action"><a href="#" class="menu-link getstarted">GET STARTED</a></div>
+    <section class="main-content">
+      <div></div>
     </section>
 
-    <section class="hero">
-      <h1 class="hero-headline1">Get Compliant.</h1>
-      <h1 class="hero-headline2">Stay Compliant.</h1>
-      <div class="hero-content">Right Comply brings pre and post hiring compliance to you.</div>
-      <div class="hero-action"><a href="#" class="menu-link getstarted">GET STARTED</a></div>
-    </section>
+
+
+
 
 
 
@@ -55,34 +50,10 @@
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 200) {
+        if (scroll >= 600) {
             $("header").addClass("scrolling");
         } else {
             $("header").removeClass("scrolling");
-        }
-    });</script>
-
-    <script>
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 200) {
-            $("li a").addClass("scrolling");
-        } else {
-            $("li a").removeClass("scrolling");
-        }
-    });</script>
-
-
-    <script>
-
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 200) {
-            $("h1:hover").addClass("scrolling");
-        } else {
-            $("h1:hover").removeClass("scrolling");
         }
     });</script>
 

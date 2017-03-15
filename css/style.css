@@ -38,12 +38,12 @@ p, a {
     background: #402e51;
     /*border-bottom: 2px solid #ccc;*/
     height: 70px;
-    opacity: .6;
+    opacity: .8;
     box-shadow: 0 1px 5px rgba(0,0,0,.5);
 }
 header.scrolling {
     background-color: #402e51;
-    opacity: .9;
+    opacity: 1;
 }
 
 .navigation {
@@ -54,14 +54,14 @@ header.scrolling {
 }
 
 .brand {
-  color: white;
-    /*color: transparent;
-    background: url(../images/z.png) no-repeat top left;
-    background-size: contain;
-    height: 60px;
-    width: 60px;
+  /*color: white;*/
+    color: transparent;
+    background: url(../images/RIGHTCOMPLY-logo.png) no-repeat;
+    background-size: cover;
+    height: 35px;
+    width: 205px;
     float: left;
-    overflow: hidden;*/
+    overflow: hidden;
 }
 .menu {
     display: flex;
@@ -103,25 +103,26 @@ header.scrolling {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*text-shadow: 0 1px 3px rgba(0,0,0,.75);*/
 }
-/*.hero-image {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-}*/
 .hero-headline1, .hero-headline2 {
     font-size: 4em;
     font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
     /*margin-top: 1em;*/
 }
 .hero-headline2 {
   margin-left: 2em;
 }
 .hero-content, .hero-action {
-    padding: .5em;
-    margin-top: .5em;
+  font-family: 'Lato', sans-serif;
+  padding: .5em;
+  margin-top: .5em;
 }
 .hero-content {
-    font-size: 2em;
+    font-size: 1.8em;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.main-content {
+  height: 1000px;
+  background-color: white;
 }
