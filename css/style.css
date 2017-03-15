@@ -45,6 +45,7 @@ header.scrolling {
     background-color: #402e51;
     opacity: .9;
 }
+
 .navigation {
     height: 70px;
     display: flex; /* make this a flexbox container */
