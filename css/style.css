@@ -38,6 +38,7 @@ p, a {
     height: 70px;
     opacity: .8;
     box-shadow: 0 1px 5px rgba(0,0,0,.5);
+    z-index: 1000000;
 }
 header.scrolling {
     background-color: #402e51;
@@ -112,14 +113,44 @@ header.scrolling {
 .hero-headline2 {
   margin-left: 2em;
 }
-.hero-content, .hero-action {
+#column-text{
+  position: relative;
+  width: 100%;
+  color: black;
+  padding: 5%;
+}
+section {
+  max-height: 500px;
+}
+.column-text:hover {
+  background-color: #92af1f;
+  transition: .2s;
+}
+.column-text:hover h2{
+  transition: .8s;
+  color: white;
+  }
+&:hover{
+  cursor: pointer;
+}
+.hide, .hero-action {
   font-family: 'Lato', sans-serif;
+  font-size: 1.8em;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3);
   padding: .5em;
   margin-top: .5em;
+  display: none;
+  transition: display linear .8s;
 }
-.hero-content {
-    font-size: 1.8em;
-    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+.hide:hover {
+  transition: .8s;
+  color: white;
+}
+p {
+  text-align: justify;
+}
+.hide h2, p{
+  color: white;
 }
 .main-content {
   text-align: center;
@@ -139,9 +170,13 @@ header.scrolling {
     /*padding: 0 10px;*/
 }
 .column-headline {
-    margin-top: 4em;
+    margin-top: 1.5em;
     font-size: 3.2em;
     color: #92af1f;
+}
+.column-headline:hover {
+    font-size: 3.2em;
+    color: white;
 }
 .column-three {
   flex: 1 1 33.33%;
@@ -152,6 +187,7 @@ header.scrolling {
 }
 .column-text {
   width: 40%;
+  position: relative;
 }
 /*.column-image {
     width: 130px;
@@ -182,6 +218,7 @@ header.scrolling {
 .column-content {
     margin-top: 1.5em;
     margin-bottom: 3em;
+    color: black;
 }
 .row-container {
   background-color: #402e51;

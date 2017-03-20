@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="https://css/animations.css">
   </head>
 
   <body>
@@ -52,8 +54,18 @@
       <div class="container">
         <div class="column-container">
           <section class="column column-text">
-            <h2 class="column-headline">Solutions</h2>
-            <!-- <p class="column-content">asdf asdf a asdf asg aasdf</p> -->
+            <div id="column-text">
+              <h2 class="column-headline">Solutions</h2>
+              <br>
+              <p class="hide">Right Comply is a product of number of years of extensive and indepth hands-on research across the IT industry. “Talent on demand” has been the preferred hiring method for IT projects as IT departments remain agile and flexible to meet
+              rapidly changing market demands.
+              <br>
+              <br>
+              Temporary IT workforce on demand often help companies and groups prioritize, organize and deliver solutions rapidly. However, hiring process is under tremendous strain and often becomes the clogged artery to critical operations.
+              <br>
+              <br>
+              The Right Comply framework brings pre-hiring and post-hiring compliance to you. A simple, intuitive application built with the best of Artificial intelligence and adaptive machine learning technologies.
+              </p>
           </section>
           <section class="column column-image">
           </section>
@@ -117,7 +129,8 @@
 		</section>
     <!-- end of main content -->
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/script.js"></script>
     <script>
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -128,6 +141,23 @@
             $("header").removeClass("scrolling");
         }
     });</script>
+
+    <script>
+    $(document).ready(function(){
+    var target = $('#column-text');
+
+    target.on('mouseover', function(){
+       $('#column-text p').removeClass('animated fadeOut hide').addClass('animated fadeIn');
+
+    });
+
+    target.on('mouseleave', function(){
+      $('#column-text p').removeClass('animated fadeIn').addClass('animated fadeOut');
+
+    });
+
+  });
+    </script>
 
   </body>
 </html>
