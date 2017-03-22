@@ -139,16 +139,13 @@ section {
   text-shadow: 0 1px 3px rgba(0,0,0,.3);
   padding: .5em;
   margin-top: .5em;
-  display: none;
   transition: display linear .8s;
 }
 .hide:hover {
   transition: .8s;
   color: white;
 }
-p {
-  text-align: justify;
-}
+
 .hide h2, p{
   color: white;
 }
