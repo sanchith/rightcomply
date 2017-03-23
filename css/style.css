@@ -181,6 +181,7 @@ section {
 }
 .column-image {
   width: 60%;
+  padding-top: 7%;
 }
 .column-text {
   width: 40%;
