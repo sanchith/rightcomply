@@ -113,34 +113,27 @@ header.scrolling {
 .hero-headline2 {
   margin-left: 2em;
 }
-#column-text{
-  position: relative;
-  width: 100%;
-  color: black;
-  padding: 5%;
-}
-section {
-  max-height: 500px;
-}
-.column-text:hover {
-  background-color: #92af1f;
-  transition: .2s;
-}
-.column-text:hover h2{
-  transition: .8s;
-  color: white;
-  }
-&:hover{
-  cursor: pointer;
-}
-.hide, .hero-action {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.8em;
-  text-shadow: 0 1px 3px rgba(0,0,0,.3);
+.hero-action {
+  /*font-family: 'Lato', sans-serif;*/
+  font-size: 1.3em;
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.3);*/
   padding: .5em;
   margin-top: .5em;
   transition: display linear .8s;
 }
+.hero-content {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+/*section {
+  max-height: 500px;
+}*/
+
+.main-content {
+  text-align: center;
+}
+
 .hide:hover {
   transition: .8s;
   color: white;
@@ -149,9 +142,7 @@ section {
 .hide h2, p{
   color: white;
 }
-.main-content {
-  text-align: center;
-}
+
 .column-container {
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +154,7 @@ section {
     /*flex: 1 1 50%;*/
     height: 500px;
     background-color: white;
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
     /*padding: 0 10px;*/
 }
 .column-headline {
@@ -181,11 +172,32 @@ section {
 }
 .column-image {
   width: 60%;
+  border: 1px solid lightgrey;
+  /*padding-top: 7%;*/
+}
+.column-video {
+  width: 60%;
+  background-color: #402e51;
   padding-top: 7%;
 }
 .column-text {
   width: 40%;
   position: relative;
+}
+.column-text>p {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.column-text:hover {
+  background-color: #92af1f;
+  transition: .8s ease-in-out;
+}
+.column-text:hover h2 {
+  transition: .8s ease-in-out;
+  color: white;
+  }
+&:hover{
+  cursor: pointer;
 }
 /*.column-image {
     width: 130px;
@@ -234,7 +246,7 @@ section {
   font-size: 3em;
 }
 .row-text {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 hr {
   margin-top: 7em;
@@ -245,7 +257,7 @@ hr {
     justify-content: space-between; /* place our items as far apart from each other as possible */
     align-items: center; /* vertically align items */
 }
-.menu-link-footer {
+.menu-link-footer, .footer-text {
   color: grey;
 }
 
@@ -255,6 +267,9 @@ hr {
         padding: 0 10px;
     }
     .column-image {
+      width: 100%;
+    }
+    .column-video {
       width: 100%;
     }
     .column-text {
