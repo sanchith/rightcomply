@@ -130,6 +130,7 @@ header.scrolling {
   max-height: 500px;
 }*/
 
+
 .main-content {
   text-align: center;
 }
@@ -259,6 +260,16 @@ hr {
 }
 .menu-link-footer, .footer-text {
   color: grey;
+}
+
+.timeline {
+  background-color: #402e51;
+  height: 500px;
+  padding-top: 2%;
+}
+
+.timeline img {
+  height: 450px;
 }
 
 @media screen and (max-width: 978px) {
