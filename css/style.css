@@ -179,7 +179,8 @@ header.scrolling {
 .column-video {
   width: 60%;
   background-color: #402e51;
-  padding-top: 7%;
+  /*padding-top: 7%;
+  padding-left: 12%;*/
 }
 .column-text {
   width: 40%;
@@ -272,6 +273,83 @@ hr {
   height: 450px;
 }
 
+.playvideo {
+  width: 100px;
+}
+.play {
+  position: relative;
+}
+.fa {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  text-align: center;
+}
+.fa-play:hover {
+ color: #92af1f;
+}
+.i {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #402e51;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #402e51;
+}
+.popup .close:hover {
+  color: #92af1f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 @media screen and (max-width: 978px) {
     .column-container {
         margin: 0 auto;

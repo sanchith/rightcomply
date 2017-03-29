@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/jquery.remodal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <link rel="stylesheet" href="https://css/animations.css">
+    <script src="https://use.fontawesome.com/05cc2df339.js"></script>
   </head>
 
   <body>
@@ -67,11 +69,32 @@
               The Right Comply framework brings pre-hiring and post-hiring compliance to you. A simple, intuitive application built with the best of Artificial intelligence and adaptive machine learning technologies.
               </p>
           </section>
-          <section class="column column-video">
-            <video width="600" controls>
+          <section class="column column-video play">
+            <div class="column-video">
+	             <a href="#popup1">
+                 <i class="fa fa-play fa-5x" aria-hidden="true">
+                 </i>
+               </a>
+            </div>
+
+            <div id="popup1" class="overlay">
+	             <div class="popup">
+		               <video width="600" controls>
+                     <source src="images/RCFINAL.mp4" type="video/mp4">
+                       Your browser does not support the video tag.
+                  </video>
+
+                  <a class="close" href="#">&times;</a>
+		                
+	                 </div>
+                 </div>
+            <!-- <a href="#modal">
+            <img class="playvideo" src="images/play.svg" alt="play yhis video, right comply, information about right comply"/></a> -->
+
+            <!-- <video width="600" controls>
   <source src="images/RCFINAL.mp4" type="video/mp4">
 Your browser does not support the video tag.
-</video>
+</video> -->
           </section>
         </div>
       </div>
